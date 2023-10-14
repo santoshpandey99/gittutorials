@@ -176,3 +176,99 @@ To https://github.com/santoshpandey99/gittutorials.git
    07be070..f2622f9  main -> main
 
 C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>
+
+
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git diff --staged
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/santoshpandey99/gittutorials.git
+   4e611fd..043dbfa  main -> main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branch
+* main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branch  Santosh_developer
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branch
+  Santosh_developer
+* main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git checkout Santosh_developer
+Switched to branch 'Santosh_developer'
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branc
+git: 'branc' is not a git command. See 'git --help'.
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branch
+* Santosh_developer
+  main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git status
+On branch Santosh_developer
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document (2).txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git add .
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git status
+On branch Santosh_developer
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New Text Document (2).txt
+
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git commit -m "Ths is my first commit to Santosh_developer branch"
+[Santosh_developer 43b961f] Ths is my first commit to Santosh_developer branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document (2).txt
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git status
+On branch Santosh_developer
+nothing to commit, working tree clean
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git checkout main
+Switched to branch 'main'
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git branch
+  Santosh_developer
+* main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git merge Santosh_developer
+Updating 043dbfa..43b961f
+Fast-forward
+ New Text Document (2).txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document (2).txt
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 266 bytes | 266.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/santoshpandey99/gittutorials.git
+   043dbfa..43b961f  main -> main
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\Administrator\Desktop\New MLproject\Git Tutorials>
+
